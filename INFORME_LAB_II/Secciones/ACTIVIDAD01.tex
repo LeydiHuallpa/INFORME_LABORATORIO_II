@@ -1,0 +1,42 @@
+\section{Actividad No 01 – Manipulaci\'on de Datos} 
+
+\begin{enumerate}[1.]
+	\item El departamento de Recursos Humanos requiere crear sentencias SQL para insertar, actualizar y eliminar datos de empleados. Como prueba se utilizará la tabla Mis\_Empleados antes de remitir las sentencias al departamento de Recursos Humanos.
+
+	\item Crear la tabla Mis\_Empleados utilizando la siguiente estructura.
+	\begin{center}
+	\includegraphics[width=8cm]{./Imagenes/imagen0102} 
+	\end{center}
+	\item Generar una sentencia de inserción de datos que permita añadir los siguientes registros:
+	\begin{center}
+	\includegraphics[width=8cm]{./Imagenes/imagen0103} 
+	\end{center}
+
+	\item Generar un script que permita que mediante utilización de variables de sustitución, la inserción de información en la tabla Mis\_Empleados.
+
+	\item Utilizando el script anterior adicionar los siguientes registros.
+	\begin{center}
+	\includegraphics[width=5cm]{./Imagenes/imagen0105} 
+	\end{center}
+	\item Revisar los cambios hechos a la tabla.
+	\item Cambiar el nombre del empleado No 3 a Benjamín.
+	\item Elevar el salario a \$ 1,000 a todos los empleados que tengan un salario menor a esa cantidad.
+	\item Eliminar el registro del empleado María Castro
+	\item Revisar los cambios hechos a la tabla.
+	\item Confirmar los cambios a la tabla.
+	\item Adicionar el siguiente registro a la tabla
+	\\exec insertar\_datos 6,'Hurtado Gamboa','Ernesto','ehurtado',1400
+	\\ go
+	\item Revisar la adición realizada
+	\item Crear un punto de restauración intermedio para esta transacción
+	\item Borrar los registros de la tabla MIS\_EMPLEADOS.
+	\item Revisar los cambios realizados.
+	\item Descartar los cambios hechos a la tabla sin descartar la última adición hecha.
+	\item Revisar nuevamente los registros de la tabla MIS\_EMPLEADOS.
+	\item Confirmar todos los cambios hechos a la tabla MIS\_EMPLEADOS.
+	\item Modificar el script del punto 4.4. a fin de que se genere automáticamente el CODIGO del empleado que lo conforman la primera letra de su nombre y la primera palabra de su apellido.
+	\item Adicionar el siguiente registro a la tabla a fin de corroborar el funcionamiento del script anterior
+           \\exec insertar\_datos 7,'Valdivia Pérez','Graciela',1800;
+           \\go
+	\item Revisar los cambios realizados. Y finalmente confirmar todos los cambios hechos a la tabla MIS\_EMPLEADOS.
+\end{enumerate} 
