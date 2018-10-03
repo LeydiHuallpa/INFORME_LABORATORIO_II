@@ -1,0 +1,1 @@
+﻿DELETE FROM mis_empleados;

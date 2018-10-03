@@ -1,0 +1,5 @@
+﻿CREATE TABLE Departamento(
+ID INT NOT NULL,
+nombre VARCHAR(25)
+)
+GO

@@ -1,0 +1,9 @@
+c:\users\aepis01\documents\visual studio 2017\Projects\DBII_LABORATORIO2\Database1\bin\Debug\DBII_LABORATORIO2.dacpac
+c:\users\aepis01\documents\visual studio 2017\Projects\DBII_LABORATORIO2\Database1\bin\Debug\Database1.dll
+c:\users\aepis01\documents\visual studio 2017\Projects\DBII_LABORATORIO2\Database1\bin\Debug\Database1.pdb
+c:\users\aepis01\documents\visual studio 2017\Projects\DBII_LABORATORIO2\Database1\obj\Debug\Model.xml
+c:\users\aepis01\documents\visual studio 2017\Projects\DBII_LABORATORIO2\Database1\obj\Debug\refactor.xml
+c:\users\aepis01\documents\visual studio 2017\Projects\DBII_LABORATORIO2\Database1\obj\Debug\postdeploy.sql
+c:\users\aepis01\documents\visual studio 2017\Projects\DBII_LABORATORIO2\Database1\obj\Debug\predeploy.sql
+c:\users\aepis01\documents\visual studio 2017\Projects\DBII_LABORATORIO2\Database1\obj\Debug\Database1.dll
+c:\users\aepis01\documents\visual studio 2017\Projects\DBII_LABORATORIO2\Database1\obj\Debug\Database1.pdb

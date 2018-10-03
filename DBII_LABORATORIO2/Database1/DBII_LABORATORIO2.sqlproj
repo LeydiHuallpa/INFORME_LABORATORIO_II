@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>DBII_LABORATORIO2</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{7895e402-4322-4f40-a0e4-a745b79d406c}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Database1</RootNamespace>
+    <AssemblyName>Database1</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="scripts_Actividad1" />
+    <Folder Include="tabla_Actividad1" />
+    <Folder Include="scripts_Actividad2" />
+    <Folder Include="tabla_Actividad2" />
+    <Folder Include="Scripts_Actividad3" />
+    <Folder Include="tabla_Actividad3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="tabla_Actividad1\1_mis_empleados.sql" />
+    <Build Include="tabla_Actividad2\1_Departamento.sql" />
+    <Build Include="tabla_Actividad2\2_Empleados.sql" />
+    <Build Include="tabla_Actividad2\3_mis_empleados2.sql" />
+    <Build Include="tabla_Actividad2\4_mis_empleados3.sql" />
+    <Build Include="tabla_Actividad3\VW_Empleados.sql" />
+    <Build Include="tabla_Actividad3\VW_Dept50.sql" />
+    <Build Include="tabla_Actividad3\SEQ_Departamentos.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="scripts_Actividad1\insertar empleados.sql" />
+    <None Include="scripts_Actividad1\sustitucion _insercion.sql" />
+    <None Include="scripts_Actividad1\cambiar nombre.sql" />
+    <None Include="scripts_Actividad2\1_Insertar Empleados2.sql" />
+    <None Include="scripts_Actividad2\2_Seleccionar Empleados2.sql" />
+    <None Include="scripts_Actividad2\3_Eliminar Tabla Empleados2.sql" />
+    <None Include="Scripts_Actividad3\1_Datos del empleado.sql" />
+    <None Include="Scripts_Actividad3\2_Actualizar VW_Dept50.sql" />
+    <None Include="Scripts_Actividad3\4_Eliminar Departamentos.sql" />
+    <None Include="Scripts_Actividad3\5_Verificar Adicion.sql" />
+    <None Include="Scripts_Actividad3\6_Crear un indice.sql" />
+    <None Include="Scripts_Actividad3\7_Crear sinonimo para tabla EMPLOYESS.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="scripts_Actividad1\ver tabla empleados.sql" />
+    <None Include="scripts_Actividad1\aumento de salario.sql" />
+    <None Include="scripts_Actividad1\eliminar registro.sql" />
+    <None Include="scripts_Actividad1\Ver cambios realizados.sql" />
+    <None Include="scripts_Actividad1\agregar un registro.sql" />
+    <None Include="scripts_Actividad1\punto de restauracion.sql" />
+    <None Include="scripts_Actividad1\borrar registros de la tabla.sql" />
+    <None Include="scripts_Actividad1\descartar cambios.sql" />
+    <None Include="scripts_Actividad1\confirmar cambios hechos_19.sql" />
+    <None Include="scripts_Actividad1\revisar y confirmar todos los cambios.sql" />
+  </ItemGroup>
+</Project>
